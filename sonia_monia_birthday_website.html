@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sonia / Monia ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:#16051f;color:#fff;overflow-x:hidden}
+.page{min-height:125vh;position:relative;display:flex;align-items:center;justify-content:center;padding:80px 20px 100px;overflow:hidden}
+.page2{min-height:145vh}.page3{min-height:155vh}
+.page1{background:radial-gradient(circle at 50% 20%,#9c27b0,#4a148c 45%,#16051f 100%)}
+.page2{background:radial-gradient(circle at 20% 20%,#ad1457,#6a1b9a 45%,#21051f 100%)}
+.page3{background:radial-gradient(circle at 80% 15%,#7b1fa2,#311b92 45%,#09051b 100%)}
+.content{width:min(920px,100%);text-align:center;z-index:3}
+.spacer{height:70px}
+.badge{display:inline-block;padding:9px 18px;border:1px solid #ffffff55;border-radius:50px;background:#ffffff18;backdrop-filter:blur(8px);font-size:14px;letter-spacing:2px;margin-bottom:22px}
+.emoji{font-size:72px;filter:drop-shadow(0 8px 15px #0005);animation:float 3s ease-in-out infinite}
+h1{font-size:clamp(42px,10vw,88px);line-height:1.02;margin:15px 0;background:linear-gradient(90deg,#fff,#ffd6f8,#fff);-webkit-background-clip:text;color:transparent;text-shadow:0 8px 30px #0005}
+.name{font-size:clamp(30px,7vw,55px);font-style:italic;letter-spacing:2px;margin:16px 0 12px;text-shadow:0 4px 15px #0008}
+.subtitle{font-size:clamp(17px,4vw,23px);line-height:1.7;color:#ffeefc;max-width:700px;margin:0 auto}
+button,.btn{border:0;border-radius:50px;padding:15px 28px;font-size:17px;font-weight:bold;cursor:pointer;background:#fff;color:#6a1b9a;box-shadow:0 10px 30px #0005;margin-top:28px;text-decoration:none;display:inline-block;transition:.25s}
+button:hover,.btn:hover{transform:translateY(-3px) scale(1.03)}
+.card{background:#ffffff13;border:1px solid #ffffff30;border-radius:28px;padding:30px;backdrop-filter:blur(12px);box-shadow:0 20px 50px #0004;margin:18px auto;max-width:760px}
+.card h2{font-size:34px;margin-bottom:18px}
+.shayari{font-size:20px;line-height:2;color:#fff7fc;font-style:italic}
+.message{font-size:18px;line-height:1.9;color:#ffeef9;margin-top:18px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.photo{height:180px;border-radius:20px;background:#ffffff18;border:1px dashed #ffffff70;display:flex;align-items:center;justify-content:center;font-size:50px}
+.photo span{font-size:13px;display:block;margin-top:8px;color:#ffe5f8}
+.final{font-size:clamp(28px,6vw,50px);line-height:1.25;margin:20px 0}
+.signature{font-size:21px;color:#ffd5f1;margin-top:20px}
+.secret-box{max-height:0;overflow:hidden;opacity:0;transition:.8s;margin-top:15px}
+.secret-box.show{max-height:400px;opacity:1}
+.next{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-size:13px;opacity:.75;z-index:5}
+.balloon{position:absolute;font-size:45px;animation:rise linear infinite;opacity:.8}
+.b1{left:5%;bottom:-100px;animation-duration:12s}.b2{right:8%;bottom:-100px;animation-duration:15s;animation-delay:2s}.b3{left:75%;bottom:-100px;animation-duration:17s;animation-delay:5s}
+.heart{position:absolute;animation:fall linear infinite;opacity:.7}
+.h1{left:12%;top:-40px;animation-duration:9s}.h2{left:55%;top:-40px;animation-duration:11s;animation-delay:2s}.h3{right:10%;top:-40px;animation-duration:8s;animation-delay:1s}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:20}
+@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes rise{to{transform:translateY(-125vh) rotate(20deg)}}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+@media(max-width:650px){.page{padding:60px 12px 85px}.page2{min-height:155vh}.page3{min-height:165vh}.card{padding:24px 16px}.gallery{gap:22px}.photo{width:100%;border-radius:20px}.photo img{width:100%;height:auto}.shayari{font-size:18px}.message{font-size:16px}}
+</style>
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+
+<section class="page page1" id="home">
+  <div class="balloon b1">🎈</div><div class="balloon b2">🎈</div><div class="balloon b3">🎈</div>
+  <div class="content">
+    <div class="badge">A SPECIAL DAY ✨</div>
+    <div class="emoji">🎉</div>
+    <h1>HAPPY<br>BIRTHDAY</h1>
+    <div class="name">Sonia / Monia ❤️</div>
+    <p class="subtitle">Aaj ka din bahut hi special hai, kyunki aaj ek bahut hi pyari si muskaan duniya mein aayi thi. 🎂</p>
+    <div class="card">
+      <p class="shayari">“Muskurahat aapki hamesha yunhi bani rahe,<br>
+      Khushiyon se bhari har subah aur har shaam rahe.<br>
+      Janamdin par bas itni si dua hai hamari,<br>
+      Aapki zindagi hamesha khoobsurat aur gulzar rahe.” 🌸</p>
+    </div>
+    <a class="btn" href="#wishes" onclick="burst()">🎊 Celebrate Now 🎊</a>
+  </div>
+  <div class="next">SCROLL FOR YOUR SURPRISE ↓</div>
+</section>
+
+<section class="page page2" id="wishes">
+  <div class="heart h1">💖</div><div class="heart h2">💗</div><div class="heart h3">💕</div>
+  <div class="content">
+    <div class="badge">FROM YOUR UNCLE ❤️</div>
+    <div class="emoji">🎂</div>
+    <div class="card">
+      <h2>Special Birthday Wishes 🌷</h2>
+      <p class="shayari">“Har khwaab aapka haqeeqat ban jaye,<br>
+      Har kadam par khushiyon ka saath mil jaye.<br>
+      Zindagi mein kabhi gham ki jagah na ho,<br>
+      Aur har din birthday se bhi khaas ho jaye.” ✨</p>
+      <p class="message">
+      Sonia / Monia, meri dua hai ki aapki zindagi mein hamesha
+      khushiyan, success, achhe log aur khoobsurat yaadein bani rahein.
+      Aap hamesha haste-muskurate rahiye aur apne har sapne ko poora kijiye. 💐
+      </p>
+    </div>
+    <div class="card">
+      <p class="shayari">“Phoolon ki tarah mehakti rahe zindagi aapki,<br>
+      Sitaaron ki tarah chamakti rahe kismat aapki.<br>
+      Har pal mile khushi aur har pal mile pyaar,<br>
+      Janamdin mubarak ho, baar-baar aur baar-baar!” 🌟</p>
+    </div>
+    <div class="card surprise">
+      <div class="badge">🎁 SECRET SURPRISE</div>
+      <h2>Wait… There’s More! ✨</h2>
+      <p class="message">Aapke liye kuch special memories bhi rakhi hain… ❤️<br>
+      Har photo ke saath ek smile free hai! 😊</p>
+      <button onclick="document.getElementById('secret').classList.add('show');burst(true)">💜 Open Surprise</button>
+      <div id="secret" class="secret-box">
+        <p class="shayari">“Yaadon ke ye pal hamesha saath rahenge,<br>
+        Aaj ki ye khushiyan kal bhi khaas rahengi.<br>
+        Jahan bhi raho, yunhi khush rehna,<br>
+        Aapki smile ki roshni hamesha paas rahegi.” 🌷</p>
+      </div>
+    </div>
+    <a class="btn" href="#memories" onclick="burst()">💝 See Memories</a>
+  </div>
+  <div class="next">ONE MORE SURPRISE ↓</div>
+</section>
+
+<section class="page page3" id="memories">
+  <div class="content">
+    <div class="badge">A LITTLE MEMORY WALL ✨</div>
+    <div class="emoji">🥳</div>
+    <h2 class="final">For You, With Lots of<br>Love & Blessings ❤️</h2>
+    <div class="card">
+      <p class="shayari">“Rishta apno ka sabse pyara hota hai,<br>
+      Khushiyon mein unka saath dobara hota hai.<br>
+      Sonia / Monia, yunhi hasti rahiye sada,<br>
+      Aapka har kal aaj se bhi zyada pyaara ho.” 🎀</p>
+    </div>
+
+    <div class="card">
+      <h2>📸 Our Beautiful Memories</h2>
+      <p class="message">Kuch moments sirf photos nahi hote… woh zindagi ki woh yaadein hote hain jinhe dekhkar baar-baar smile aa jaati hai. ❤️</p>
+    </div>
+    <div class="gallery">
+      <div class="photo"><img src="sonia_monia_birthday_assets/memory1.png" alt="Birthday memory 1"><div class="photo-label">💖 A beautiful memory</div></div>
+      <div class="photo"><img src="sonia_monia_birthday_assets/memory2.png" alt="Birthday memory 2"><div class="photo-label">🌸 Special moment</div></div>
+      <div class="photo"><img src="sonia_monia_birthday_assets/memory3.png" alt="Birthday memory 3"><div class="photo-label">✨ Keep this smile forever</div></div>
+      <div class="photo"><img src="sonia_monia_birthday_assets/memory4.png" alt="Birthday memory 4"><div class="photo-label">🎀 One more precious memory</div></div>
+    </div>
+
+    <div class="card">
+      <div class="badge">🌷 A FEW WORDS FOR YOU</div>
+      <p class="shayari">“Dua hai har raasta aasaan mile,<br>
+      Har mod par khushiyon ka jahaan mile.<br>
+      Jo chaho woh sab tumhe milta rahe,<br>
+      Aur har saal birthday se bhi khoobsurat lage.” ✨</p>
+      <p class="message">Aapki life ka har naya chapter pehle se zyada beautiful ho. Aap apne dreams ko chase karti rahein, khulkar hasein, naye memories banayein aur hamesha apni pyari si smile ke saath shine karti rahein. 💜</p>
+    </div>
+
+    <div class="card">
+      <p class="message">
+        🎂 May your birthday be filled with laughter.<br>
+        🌸 May your dreams turn into beautiful memories.<br>
+        ✨ May every new year of your life bring you more happiness.<br>
+        ❤️ And may you always keep that beautiful smile!
+      </p>
+      <div class="final">Happy Birthday<br>Sonia / Monia 🎉❤️</div>
+      <div class="signature">With lots of love, blessings & best wishes<br><b>— Your Uncle 💖</b></div>
+      <button onclick="burst(true)">🎆 Make It Magical 🎆</button>
+    </div>
+  </div>
+</section>
+
+<script>
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');
+let pieces=[],running=false;
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight}
+addEventListener('resize',resize);resize();
+function burst(big=false){
+  for(let i=0;i<(big?180:90);i++){
+    pieces.push({x:innerWidth/2,y:innerHeight*.35,vx:(Math.random()-.5)*(big?14:10),vy:-Math.random()*(big?15:10)-3,
+      s:Math.random()*8+4,r:Math.random()*6.28,vr:(Math.random()-.5)*.3,life:1});
+  }
+  if(!running){running=true;animate()}
+}
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  pieces.forEach(p=>{
+    p.x+=p.vx;p.vy+=.35;p.y+=p.vy;p.r+=p.vr;p.life-=.008;
+    ctx.save();ctx.globalAlpha=Math.max(0,p.life);ctx.translate(p.x,p.y);ctx.rotate(p.r);
+    ctx.fillStyle=['#fff','#ffd54f','#ff80ab','#ce93d8','#81d4fa'][Math.floor(Math.random()*5)];
+    ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s*1.5);ctx.restore();
+  });
+  pieces=pieces.filter(p=>p.life>0&&p.y<canvas.height+30);
+  if(pieces.length){requestAnimationFrame(animate)}else{running=false}
+}
+setTimeout(()=>burst(),700);
+</script>
+</body>
+</html>
