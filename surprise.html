@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Surprise for Sonia / Monia 🎁</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;color:#fff;background:#10031a;overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:55px 16px;position:relative;overflow:hidden}
+.hero{background:radial-gradient(circle at 50% 20%,#ba68c8,#6a1b9a 45%,#16051f 100%)}
+.memories{background:radial-gradient(circle at 20% 15%,#f06292,#7b1fa2 50%,#18051f)}
+.final{background:radial-gradient(circle at 80% 15%,#9575cd,#311b92 48%,#09051b)}
+.wrap{width:min(900px,100%);text-align:center;z-index:3}
+.badge{display:inline-block;padding:9px 18px;border:1px solid #ffffff55;border-radius:50px;background:#ffffff18;backdrop-filter:blur(8px);letter-spacing:2px;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(45px,11vw,90px);line-height:1;margin:12px 0;text-shadow:0 10px 35px #0006}
+h2{font-size:clamp(28px,6vw,44px);margin-bottom:16px}
+.name{font-size:clamp(28px,7vw,52px);font-style:italic;letter-spacing:2px;text-shadow:0 5px 18px #0007}
+.bigemoji{font-size:75px;animation:bob 3s ease-in-out infinite;display:inline-block}
+.card{background:#ffffff15;border:1px solid #ffffff35;border-radius:28px;padding:28px 22px;margin:20px auto;backdrop-filter:blur(12px);box-shadow:0 20px 50px #0005}
+.shayari{font-size:20px;line-height:2;font-style:italic;color:#fff7fd}
+.msg{font-size:18px;line-height:1.9;color:#ffeef9;margin-top:18px}
+.photo{width:100%;margin:22px auto;border-radius:25px;overflow:hidden;border:2px solid #ffffff55;background:#13051b;box-shadow:0 18px 45px #0006}
+.photo img{display:block;width:100%;height:auto;max-height:none}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}
+.small-photo{width:100%;border-radius:22px;overflow:hidden;border:2px solid #ffffff45;background:#13051b;box-shadow:0 15px 35px #0005}
+.small-photo img{width:100%;height:auto;display:block}
+.btn{display:inline-block;text-decoration:none;background:#fff;color:#6a1b9a;border-radius:50px;padding:15px 28px;font-weight:bold;font-size:17px;margin-top:18px;box-shadow:0 10px 30px #0005;transition:.25s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.note{font-size:14px;opacity:.75;margin-top:14px}
+.float{position:absolute;font-size:42px;animation:rise linear infinite;opacity:.75}
+.f1{left:6%;bottom:-80px;animation-duration:12s}.f2{right:8%;bottom:-80px;animation-duration:15s}.f3{left:48%;bottom:-80px;animation-duration:17s}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:10}
+@keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes rise{to{transform:translateY(-120vh) rotate(30deg)}}
+@media(max-width:650px){section{padding:45px 12px}.card{padding:24px 16px}.grid{grid-template-columns:1fr}.shayari{font-size:18px}.msg{font-size:16px}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<section class="hero">
+<div class="float f1">🎈</div><div class="float f2">🎈</div><div class="float f3">💖</div>
+<div class="wrap">
+<div class="badge">📅 12 SEPTEMBER 2026</div>
+<div class="badge">🎁 SURPRISE UNLOCKED 🎁</div>
+<div class="bigemoji">✨</div>
+<h1>Just For You</h1>
+<div class="name">Sonia / Monia ❤️</div>
+<div class="card">
+<p class="shayari">“Yaadon ke ye pal hamesha saath rahenge,<br>
+Aaj ki ye khushiyan kal bhi khaas rahengi.<br>
+Jahan bhi raho, yunhi khush rehna,<br>
+Aapki smile ki roshni hamesha paas rahegi.” 🌷</p>
+<p class="msg">Aapne Open Surprise par click kiya… aur ab birthday ka ek special chapter aapke liye hai. 💜</p>
+</div>
+<a class="btn" href="memories.html" onclick="burst()">📸 See Your Memories 📸</a>
+</div>
+</section>
+
+<section class="memories" id="preview">
+<div class="wrap">
+<div class="badge">📸 MEMORY MOMENTS</div>
+<h2>Some Beautiful Moments ❤️</h2>
+<p class="msg">Kuch tasveerein sirf photos nahi hoti… ye woh pal hote hain jinhe dekhkar dil dobara smile karta hai. ✨</p>
+<div class="photo"><img src="memory1.png" alt="Beautiful birthday memory"></div>
+<div class="grid">
+<div class="small-photo"><img src="memory2.png" alt="Birthday memory 2"></div>
+<div class="small-photo"><img src="memory3.png" alt="Birthday memory 3"></div>
+</div>
+<div class="photo"><img src="memory4.png" alt="Birthday memory 4"></div>
+<a class="btn" href="#last" onclick="burst()">💖 One Last Surprise</a>
+</div>
+</section>
+
+<section class="final" id="last">
+<div class="wrap">
+<div class="badge">💌 FROM YOUR UNCLE</div>
+<div class="bigemoji">🎂</div>
+<h2>For A Very Special Person</h2>
+<div class="card">
+<p class="shayari">“Phoolon ki tarah mehakti rahe zindagi aapki,<br>
+Sitaaron ki tarah chamakti rahe kismat aapki.<br>
+Har pal mile khushi aur har pal mile pyaar,<br>
+Janamdin mubarak ho, baar-baar aur baar-baar!” 🌟</p>
+<p class="msg">Meri dil se dua hai ki aapka har sapna poora ho, har naya saal aapke liye aur zyada khushiyan laaye, aur aap hamesha isi tarah haste-muskurate rahein. ❤️</p>
+</div>
+<div style="font-size:clamp(30px,7vw,55px);font-weight:bold;line-height:1.2">
+Happy Birthday<br>Sonia / Monia 🎉
+</div>
+<p class="msg">Lots of blessings, happiness & love<br><b>— Your Uncle ❤️</b></p>
+<a class="btn" href="index.html">🏠 Back to Birthday Page</a>
+<p class="note">Made with love, memories & lots of blessings ✨</p>
+</div>
+</section>
+
+<script>
+const c=document.getElementById("fx"),x=c.getContext("2d");let p=[],on=false;
+function size(){c.width=innerWidth;c.height=innerHeight}size();addEventListener("resize",size);
+function burst(){for(let i=0;i<130;i++)p.push({x:innerWidth/2,y:innerHeight*.3,vx:(Math.random()-.5)*13,vy:-Math.random()*13-3,s:Math.random()*8+3,r:Math.random()*6.2,a:1});
+if(!on){on=true;draw()}}
+function draw(){x.clearRect(0,0,c.width,c.height);p.forEach(q=>{q.x+=q.vx;q.vy+=.35;q.y+=q.vy;q.r+=.1;q.a-=.008;x.save();x.globalAlpha=Math.max(q.a,0);x.translate(q.x,q.y);x.rotate(q.r);x.fillStyle=["#fff","#ffd54f","#ff80ab","#ce93d8","#81d4fa"][Math.floor(Math.random()*5)];x.fillRect(-q.s/2,-q.s/2,q.s,q.s*1.5);x.restore()});p=p.filter(q=>q.a>0);if(p.length)requestAnimationFrame(draw);else on=false}
+setTimeout(burst,600);
+</script>
+</body>
+</html>

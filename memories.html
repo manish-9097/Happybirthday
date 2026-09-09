@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Our Memories ❤️ | Sonia / Monia</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;color:#fff;background:#10031a;overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:60px 14px;position:relative;overflow:hidden}
+.s1{background:radial-gradient(circle at 50% 15%,#ec407a,#8e24aa 45%,#18051f 100%)}
+.s2{background:radial-gradient(circle at 20% 20%,#ab47bc,#5e35b1 50%,#10051e)}
+.s3{background:radial-gradient(circle at 80% 20%,#7e57c2,#283593 48%,#08051a)}
+.wrap{width:min(920px,100%);text-align:center;z-index:3}
+.badge{display:inline-block;padding:9px 17px;border:1px solid #ffffff55;border-radius:50px;background:#ffffff18;backdrop-filter:blur(10px);font-size:13px;letter-spacing:2px;margin-bottom:20px}
+h1{font-size:clamp(43px,10vw,86px);line-height:1.02;margin:12px 0;text-shadow:0 9px 30px #0007}
+h2{font-size:clamp(29px,7vw,45px);margin-bottom:15px}
+.name{font-size:clamp(29px,7vw,53px);font-style:italic;letter-spacing:2px;text-shadow:0 4px 18px #0008}
+.emoji{font-size:75px;display:inline-block;animation:float 3s ease-in-out infinite}
+.card{background:#ffffff14;border:1px solid #ffffff35;border-radius:28px;padding:28px 20px;margin:22px auto;backdrop-filter:blur(12px);box-shadow:0 20px 55px #0005}
+.shayari{font-size:20px;line-height:2;font-style:italic;color:#fff8fd}
+.msg{font-size:18px;line-height:1.9;color:#ffeef9;margin-top:17px}
+.photo{width:100%;margin:25px auto;border-radius:26px;overflow:hidden;border:2px solid #ffffff55;background:#13051b;box-shadow:0 20px 50px #0006;position:relative}
+.photo img{display:block;width:100%;height:auto}
+.caption{padding:15px 18px;background:linear-gradient(#0000,#000b);font-size:17px;text-align:left;position:absolute;bottom:0;left:0;right:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:25px}
+.grid .photo{margin:0}
+.btn{display:inline-block;text-decoration:none;background:#fff;color:#6a1b9a;border-radius:50px;padding:15px 27px;font-weight:bold;font-size:17px;margin-top:18px;box-shadow:0 10px 30px #0005;transition:.25s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.dots{display:flex;justify-content:center;gap:9px;margin:20px}.dots i{width:9px;height:9px;border-radius:50%;background:#fff8}
+.dots i:first-child{background:#fff}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:10}
+.spark{position:absolute;font-size:35px;animation:rise linear infinite;opacity:.7}
+.a{left:7%;bottom:-70px;animation-duration:11s}.b{right:8%;bottom:-70px;animation-duration:14s}.c{left:47%;bottom:-70px;animation-duration:16s}
+@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes rise{to{transform:translateY(-120vh) rotate(30deg)}}
+@media(max-width:650px){section{padding:50px 11px}.card{padding:24px 15px}.grid{grid-template-columns:1fr}.shayari{font-size:18px}.msg{font-size:16px}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<section class="s1">
+<div class="spark a">💖</div><div class="spark b">✨</div><div class="spark c">🌸</div>
+<div class="wrap">
+<div class="badge">📅 12 SEPTEMBER 2026</div>
+<div class="badge">📸 PAGE 03 • MEMORIES</div>
+<div class="emoji">🥰</div>
+<h1>Our Beautiful<br>Memories</h1>
+<div class="name">Sonia / Monia ❤️</div>
+<div class="card">
+<p class="shayari">“Kuch pal tasveeron mein ruk jaate hain,<br>
+Kuch pal dil ke bahut paas aa jaate hain.<br>
+Ye yaadein yunhi muskurati rahein,<br>
+Aur har naya pal aur bhi khaas ban jaaye.” ✨</p>
+<p class="msg">Welcome to the memory page — yahan har photo ke saath ek chhoti si feeling bhi hai. 💕</p>
+</div>
+<div class="dots"><i></i><i></i><i></i></div>
+<a class="btn" href="#photo1" onclick="burst()">💗 Start Memories</a>
+</div>
+</section>
+
+<section class="s2" id="photo1">
+<div class="wrap">
+<div class="badge">🌸 MEMORY 01</div>
+<h2>A Smile Worth Remembering</h2>
+<div class="photo"><img src="memory1.png" alt="Memory 1"><div class="caption">💖 Ek smile jo poori memory ko special bana deti hai.</div></div>
+<div class="card">
+<p class="shayari">“Hansi aapki sabse pyari nishani hai,<br>
+Khush rehna hi aapki kahani hai.” 🌷</p>
+</div>
+<a class="btn" href="#photo2" onclick="burst()">✨ Next Memory</a>
+</div>
+</section>
+
+<section class="s3" id="photo2">
+<div class="wrap">
+<div class="badge">🎀 MEMORY 02 • 03 • 04</div>
+<h2>More Moments, More Smiles</h2>
+<div class="grid">
+<div class="photo"><img src="memory2.png" alt="Memory 2"><div class="caption">🌸 Special moment</div></div>
+<div class="photo"><img src="memory3.png" alt="Memory 3"><div class="caption">✨ Beautiful memory</div></div>
+</div>
+<div class="photo"><img src="memory4.png" alt="Memory 4"><div class="caption">❤️ A moment to keep forever</div></div>
+<div class="card">
+<p class="shayari">“Yaadon ka ye safar yunhi chalta rahe,<br>
+Har pal chehre par ek nayi khushi milti rahe.<br>
+Aaj ki tarah kal bhi roshan ho zindagi,<br>
+Aur har birthday aur bhi beautiful hota rahe.” 🎂</p>
+<p class="msg">May these memories always bring a smile to your face. Aur aane wale saalon mein aisi hi hazaaron beautiful memories judti rahein. 💐</p>
+</div>
+<a class="btn" href="#final" onclick="burst(true)">🎆 Final Birthday Wish</a>
+</div>
+</section>
+
+<section class="s1" id="final">
+<div class="wrap">
+<div class="badge">💌 A FINAL NOTE FROM YOUR UNCLE</div>
+<div class="emoji">🎂</div>
+<h2>Keep Smiling Always ❤️</h2>
+<div class="card">
+<p class="shayari">“Phoolon ki tarah mehakti rahe zindagi aapki,<br>
+Sitaaron ki tarah chamakti rahe kismat aapki.<br>
+Har pal mile khushi aur har pal mile pyaar,<br>
+Janamdin mubarak ho baar-baar!” 🌟</p>
+<p class="msg">Meri dil se dua hai ki aapke har sapne poore hon, aapki har wish reality bane aur aap hamesha khush aur healthy smile ke saath aage badhti rahein. ❤️</p>
+</div>
+<h1 style="font-size:clamp(32px,8vw,65px)">Happy Birthday<br>Sonia / Monia 🎉❤️</h1>
+<p class="msg"><b>Lots of blessings & love<br>— Your Uncle 💖</b></p>
+<a class="btn" href="index.html">🏠 Back to Birthday Home</a>
+</div>
+</section>
+
+<script>
+const c=document.getElementById("fx"),x=c.getContext("2d");let p=[],on=false;
+function size(){c.width=innerWidth;c.height=innerHeight}size();addEventListener("resize",size);
+function burst(big=false){for(let i=0;i<(big?170:110);i++)p.push({x:innerWidth/2,y:innerHeight*.35,vx:(Math.random()-.5)*13,vy:-Math.random()*14-3,s:Math.random()*8+3,r:Math.random()*6.2,a:1});
+if(!on){on=true;draw()}}
+function draw(){x.clearRect(0,0,c.width,c.height);p.forEach(q=>{q.x+=q.vx;q.vy+=.35;q.y+=q.vy;q.r+=.1;q.a-=.008;x.save();x.globalAlpha=Math.max(q.a,0);x.translate(q.x,q.y);x.rotate(q.r);x.fillStyle=["#fff","#ffd54f","#ff80ab","#ce93d8","#81d4fa"][Math.floor(Math.random()*5)];x.fillRect(-q.s/2,-q.s/2,q.s,q.s*1.5);x.restore()});p=p.filter(q=>q.a>0);if(p.length)requestAnimationFrame(draw);else on=false}
+setTimeout(burst,500);
+</script>
+</body>
+</html>
